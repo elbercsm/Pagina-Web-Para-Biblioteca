@@ -1,0 +1,48 @@
+
+.header-book{
+    height: 50px;
+    }
+    
+    .books{
+        align-items: center;
+        text-align: center;
+        width: 300px;
+        height: 425px;
+        /* border: 1px solid; */
+        border-radius: 5px;
+        float: left;
+        margin: 10px;
+    
+    }
+    .body-book{
+        align-items: center;
+        text-align: center;
+        width: 250px;
+        height: 300px;
+        text-align: center;
+        border: 1px solid;
+        border-radius: 5px;
+        margin-left: 8%;
+    
+        /* background-color: lightgreen; */
+    }
+    
+    .footer-book{
+        margin: 5px;
+    }
+    dialog{
+        width: 450px;
+        border: 1px solid lightskyblue;
+        border-radius: 10px;
+    }
+    .body-book-emp{
+        align-items: center;
+        text-align: center;
+        width: 250px;
+        height: 300px;
+        text-align: center;
+        border: 1px solid;
+        border-radius: 5px;
+        margin-left: 8%;
+        background-color: lightslategray;
+    }

@@ -1,0 +1,32 @@
+<div class="add-dialog">
+
+  <div class="modal-header">
+    <h1 class="modal-title">Cadastrar {{nome}}</h1>
+  </div>
+  <div class="modal-body">
+
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+      <div *ngFor="let prop of prioridades;let i = index" class="form-group">
+        <label>{{prop}}</label>
+
+        <p></p>
+        <!-- <select class="form-control" *ngIf="((valores[i]!='text')&&(valores[i]!='number')&&(valores[i]!='password')&&(valores[i]!='date'))" (click)="separarString(valores[i])" style="width: 150px;" >
+          <option *ngFor="let s of separar_string" class="form-control"></option>
+       </select>    -->
+
+        <div *ngIf="(valores[i]=='login')">
+
+        <input name={{prop}} ngModel={{login}} class="form-control" readonly>
+        </div>
+
+        <input *ngIf="(valores[i]!='login')" type={{valores[i]}} name={{prop}} ngModel class="form-control" >
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary">Submit</button>
+        <button class="btn btn-danger" [routerLink]="[urlCancel]">Cancel</button>
+      </div>
+
+    </form>
+  </div>
+</div>

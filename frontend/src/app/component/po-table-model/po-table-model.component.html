@@ -1,0 +1,21 @@
+<p>po-table-model works!</p>
+<table class="table" *ngIf="!cadastro"> 
+    <thead class="thead-dark" >
+      <tr>
+        <th scope="col"*ngFor="let item of propriedades">{{item}}</th>
+        <th>Atualizar</th>
+        <th>Excluir</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of lista" >
+        <td *ngFor="let i of propriedades">{{item[i]}}</td>
+        <td><button class="btn btn-warning" (click)="atualizar(item)"  >Atualizar</button></td>    
+        <td><button class="btn btn-danger" (click)="excluir(item.id)">Excluir</button></td>            
+      </tr>
+    </tbody>
+  </table>
+
+<div class="footer">
+  <button class="btn btn-primary" [routerLink]="['/cadastro']" [queryParams] = "{valores:valores,prioridades:prioridades, nome:nome}">Adicionar</button>
+</div>

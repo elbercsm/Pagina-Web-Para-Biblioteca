@@ -1,0 +1,20 @@
+<div class="login">
+
+    <h2 style="text-align: center;">Login</h2>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+
+        <div class="login-body">
+            <label class="lIput">Usuário</label>
+            <input class="form-control lIput" type="text" name="email" ngModel>
+            <label class="lIput">Senha</label>
+            <input class="form-control lIput" type="password" name="senha" ngModel>
+        </div>
+      
+
+        <div class="login-footer" style="float: right;">
+            <button class="btn btn-primary lButton" >Entrar</button>
+            <button class="btn btn-primary lButton" [routerLink]="['/cadastro']" [queryParams] = "{valores:valores,prioridades:chaves, nome:nome}">Cadastrar</button>
+        </div>
+
+    </form>
+</div>

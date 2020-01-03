@@ -1,0 +1,15 @@
+.add-dialog{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.footer{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

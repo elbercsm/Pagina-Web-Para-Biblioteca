@@ -1,0 +1,23 @@
+<div *ngFor="let item of livros" class="books"> 
+ <div class="header-book">
+        <h5>{{item.nome}}</h5>
+ </div>
+<div class="body-book">
+        <img src="imagem.jpg" alt="Capa">	
+      
+        <div *ngIf="!item.status">
+            <h5>Indisponivel!</h5>
+        </div>
+    
+</div> 
+
+
+<div class="footer-book">
+<!-- <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title={{item.descricao}}> -->
+        <button class="btn btn-primary" (click)="teste()">Visualizar</button>
+      <!-- </span> -->
+    </div>
+</div>
+
+      
+   
